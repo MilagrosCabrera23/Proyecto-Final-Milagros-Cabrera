@@ -167,12 +167,6 @@ footer {
     font-weight: 300;
 }
 
-/*menu-HAMBURGESA*/
-.boton-Hamburgesa {
-    border: solid white 1.3px;
-    border-radius: 1em;
-}
-
 /*titulos y textos*/
 .Font::first-letter {
     color: rebeccapurple;
@@ -564,9 +558,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px blueviolet solid;
     margin-top: 1em;
-    
 }
 
 .nosotros-box-2 h3 {
@@ -729,7 +721,7 @@ form {
         color: aqua;
         text-align: center;
     }
- }
+ 
 
     @media (min-width: 1500px) {
         .home-h2{
@@ -789,4 +781,4 @@ form {
 
 
 
-}
+
