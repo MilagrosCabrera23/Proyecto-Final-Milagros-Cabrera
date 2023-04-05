@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Morales Peluqueria</title>
+  <link rel="shorcut icon" href="../img/iconopeluqueria.png" type="img/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style2.css" type="">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg botonera">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../img/logo.webp" alt="logo AM">
+        <!--Aca va el logo-->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <!--Empieza boton hamburgesa-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="boton-Hamburgesa"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav m-auto mb-4 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/ubicanos.html">Ubicanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!--Termina nav-->
+  <!--Empieza carousel-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/header2.jpg" class="d-block w-100" alt="header-1">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/header4.jpg" class="d-block w-100" alt="header-2">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/header3.jpg" class="d-block w-100" alt="header-3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Finaliza Nav y Header -->
+
+  <main>
+    <h1 class="h1-contacto">INFORMACION DE CONTACTO</h1>
+
+    <form action="envio.php" method="get" class="contacto-form ">
+
+      <label for="name" class="lab-form">NOMBRE COMPLETO</label>
+      <input class="input-form" type="text" id="name">
+
+      <label for="email" class="lab-form">EMAIL</label>
+      <input class="input-form" type="email" id="email">
+
+      <label for="telefono" class="lab-form">TELEFONO</label>
+      <input class="input-form" type="tel" id="telefono">
+
+      <label for="mensaje" class="lab-form">CONSULTA</label>
+      <textarea name="consulta" id="mensaje" type="text" cols="70" rows="3"></textarea>
+
+      <label for="button"></label>
+      <input class="buttonEnviar" type="submit" id="button">
+
+    </form>
+  </main>
+
+  <!--Finaliza Main-->
+
+  <footer>
+    <a href="index.html" alt="Home" class="logo-footer">
+      <img src="../img/logo.webp" class="imgLogo-footer" alt="logo AM">
+    </a>
+
+    <h2 class="footer-H2">SEGUINOS EN REDES</h2>
+
+    <div class="footer-icon-conteiner">
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="../img/facebook.svg" class="footerIcon2" alt="Seguinos en Facebook">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="../img/instagram.svg" class="footerIcon2" alt="Siguenos en instagram">
+      </a>
+    </div>
+  </footer>
+  <!--Finaliza footer-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
