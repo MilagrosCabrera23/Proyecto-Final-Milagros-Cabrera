@@ -1,0 +1,65 @@
+
+//nav//
+.botonera {
+    color: $colorPrincipal;
+    background-color: $bg-Footer ;
+
+    img {
+        width: 30%;
+
+        ul {
+            li {
+                a {
+                    color: $colorMain;
+                    text-decoration: none;
+                    font-size: $text-g;
+                    font-family: $font-tipo-Secundario;
+                    font-weight: $text-light;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+footer {
+    background-color: $bg-Footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        img {
+            width: 50%;
+
+            h2 {
+                text-decoration: overline;
+                color: aqua;
+                text-align: center;
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50%;
+
+                    a {
+                        width: 30%;
+
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

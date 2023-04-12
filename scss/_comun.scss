@@ -1,0 +1,29 @@
+
+body {
+    background-color:$body-bgColor;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family:$font-tipoPrimario ;
+    color: $colorPrincipal;
+
+}
+p {
+    font-family: $font-tipoPrimario;
+    font-weight:$text-light ;
+    font-size: $text-sm;
+}
+h1 {
+
+    font-size:$text-lg;
+}
+h2 {
+    font-size: $text-m;
+}
+h3 {
+    font-size:$text-m;
+   
+}

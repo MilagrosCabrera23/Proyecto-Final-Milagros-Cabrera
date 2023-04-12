@@ -1,0 +1,70 @@
+h1 {
+    color: $colorPrincipal;
+    margin: 1em;
+    font-size: $text-g;
+
+    p {
+        font-size: $text-sm;
+        line-height: 1em;
+        font-family: $font-tercer;
+        color: $colorText;
+
+        font-size: $text-g;
+
+        &:first-letter {
+            color: aqua;
+
+            h2 {
+                font-size: $text-g;
+                text-align: center;
+                color: $colorPrincipal;
+
+                section {
+                    display: flex;
+                    flex-direction: column;
+
+                    article {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 1em;
+
+                        h3 {
+                            color: $colorPrincipal;
+                            text-align: left;
+                            margin: 1em 0em;
+                            text-decoration: underline;
+                            font-size: $text-g;
+
+                            p {
+                                text-align: center;
+                                color: $colorText;
+                                font-size: $text-sm;
+                                font-family: $font-tipoPrimario;
+
+                                img {
+                                    width: 60%;
+
+                                    div {
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        a {
+                                            background-color: darkturquoise;
+                                            color: $colorPrincipal;
+                                            padding: 1em;
+                                            margin-top: 1em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
