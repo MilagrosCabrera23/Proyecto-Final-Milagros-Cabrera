@@ -160,9 +160,6 @@ iframe {
     width: 33%;
     margin: 1em;
   }
-  .button, .boton-nosotros-serv {
-    margin-left: 15em;
-  }
 }
 /* Nosotros responsive */
 .title-nosotros {
@@ -290,6 +287,11 @@ iframe {
     font-size: 1.5em;
     line-height: 1.6em;
   }
+  .buttton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   /* Nosotros responsive */
   .title-nosotros {
     font-size: 2.2em;
@@ -316,9 +318,6 @@ iframe {
   }
   .img-nosotros {
     width: min-content;
-  }
-  .button a, .boton-nosotros-serv a {
-    margin-left: 22em !important;
   }
   .title-ser {
     font-size: 2.2em;
@@ -427,10 +426,12 @@ footer .footer-H2 {
   background-color: blueviolet;
   cursor: pointer;
   border: none;
+  margin: 1em;
   position: relative;
   border-radius: 12px;
-  width: 100%;
+  width: 45%;
   text-align: center;
+  align-items: center;
 }
 
 .button a, .boton-nosotros-serv a {
