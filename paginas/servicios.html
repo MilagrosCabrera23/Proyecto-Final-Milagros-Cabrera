@@ -6,14 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shorcut icon" href="../img/iconopeluqueria.png" type="img/x-icon">
+  <title>Servicios de Ana</title>
+  <meta name="description" content="Contamos con expertos en clavos,cabello y spa.Ven a comprobarlo por ti misma!">
+  <meta name="author" content="Cabrera Milagros Magaly">
+  <meta name="copyright" content="Ana Morales-Peluqueria 2023">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style2.css" type="text/css">
-  <link rel="stylesheet" href="../fresco-2.3.2/dist/css/fresco.css" type="text/css">
-  <title>Ana Morales peluqueria</title>
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="./js/servicios.js" type="text/js">
+
+
 </head>
 
-<body>
+<body class="linear-grandient2">
   <nav class="navbar navbar-expand-lg botonera">
     <div class="container">
       <a class="navbar-brand" href="../index.html">
@@ -87,11 +92,12 @@
 
   <main>
     <!-- Start Box 1 - Servicios-->
-    <h1 class="title-ser">Los servicios de mayor calidad en belleza con Ana Morales</h1>
+    <h1 class="h1-servicios">Los servicios de belleza con Ana </h1>
+
     <div class="servicios-box1">
       <article>
         <h3 class="serv-descrip">CABELLO</h3>
-        <p class="font-letra">Contamos con: cortes simples hasta coloraciones,adaptandonos siempre a
+        <p class="font-letra">Contamos con: cortes simples hasta coloraciones,<br>adaptandonos siempre a
           tu estilo. Nuestro equipo de profesionales podrá asesorarte y hacer lucir tu pelo con el look ideal.</p>
         <ul class="bg-violeta">
           <li>Alisado.</li>
@@ -137,87 +143,82 @@
           <li>Depilacion con cera para mentón.</li>
         </ul>
       </article>
+    </div>
 
-      <div class="boton-serv-ubi">
-        <a href="ubicanos.html" class="ubicanos__serv-boton">Ubicanos</a>
-      </div>
-
-
-
-
-      <!-- Start Box 2 - Galeria  -->
+    <div class="button">
+      <a href="ubicanos.html" class="ubicanos__serv-boton" alt="Boton de Ubicarnos">Ubicanos</a>
+    </div>
 
 
-      <h1 class="galeriaLetras">Galeria de trabajos:</h1>
+    <!-- Start Box 2 - Galeria  -->
+
+    <h2 class="galeriaLetras">Galeria de trabajos:</h1>
+
       <section id="galeria">
+        <!-- Grid row -->
+        <div class="row">
 
-        <div class="img-a">
-          <a href="../img/manicurahome.webp" class="fresco" data-fresco-group="fondos"
-            data-fresco-caption="Pintando uñas">
-            <img src="../img/manicurahome.webp">
-          </a>
+          <!-- Grid column -->
+          <div class="col-md-12 d-flex justify-content-center m-2">
+
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="Clavos">CLAVOS</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="Spa">SPA</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="Cabello">CABELLO</button>
+
+          </div>
+          <!-- Grid column -->
+
         </div>
+        <!-- Grid row -->
 
-        <div class="img-b">
-          <a href="../img/galeria-img-2.webp" class="fresco" data-fresco-group="fondos"
-            data-fresco-caption="Uñas de manos y pies">
-            <img src="../img/galeria-img-2.webp">
-          </a>
+        <!-- Grid row -->
+        <div class="gallery" id="gallery">
+
+          <!-- Grid column -->
+          <div class="mb-3 pics animation all 2">
+            <img class="img-fluid" src="../img/manicurahome.webp" alt="Imagen pintando uñas">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="../img/galeria-img-2.webp" alt="Manos y pies con manicura.">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="../img/galeria-img-8.webp" alt="Foto de ojos">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="mb-3 pics animation all 2">
+            <img class="img-fluid" src="../img/francobarbero.webp" alt="Hombre sonriendo">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="mb-3 pics animation all 2">
+            <img class="img-fluid" src="../img/galeria-img9.webp" alt="Depilando las piernas con cera">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="../img/galeria-img-6.webp" alt="Foto de mujer medio cuerpo de perfil">
+          </div>
+          <!-- Grid column -->
+
         </div>
-
-
-        <div class="img-c">
-          <a href="../img/galeria-img-3.webp" class="fresco" data-fresco-group="fondos"
-            data-fresco-caption="uñas de mariposa">
-            <img src="../img/galeria-img-3.webp">
-          </a>
-        </div>
-
-
-        <div class="img-d">
-          <a href="../img/galeria-img-4.webp" class="fresco" data-fresco-group="fondos"
-            data-fresco-caption="Corte de cabello">
-            <img src="../img/galeria-img-4.webp">
-          </a>
-        </div>
-
-        <div class="img-e">
-          <a href="../img/galeria-img-5.webp" class="fresco" data-fresco-group="fondos"
-            data-fresco-caption="Corte de mujer">
-            <img src="../img/galeria-img-5.webp">
-          </a>
-        </div>
-
-        <div class="img-f">
-          <a href="../img/francobarbero.webp" class="fresco" data-fresco-group="fondos"
-            data-fresco-caption="Corte de cabello">
-        <img src=" ../img/francobarbero.webp">
-          </a>
-        </div>
-
-        <div class="img-g">
-          <a href="../img/galeria-img-7.webp" class="fresco" data-fresco-group="fondos"
-            data-fresco-caption="Masajes faciales">
-            <img src="../img/masajes.webp">
-          </a>
-        </div>
-
-        <div class="img-h">
-          <a href="../img/galeria-img-8.webp" class="fresco" data-fresco-group="fondos" data-fresco-caption="Ojos">
-            <img src="../img/galeria-img-8.webp">
-          </a>
-        </div>
-
-        <div class="img-i">
-          <a href="../img/galeria-img9.webp" class="fresco" data-fresco-group="fondos"
-            data-fresco-caption="Depilando una pierna">
-            <img src="../img/galeria-img9.webp">
-          </a>
+        <!-- Grid row -->
       </section>
+
   </main>
+
   <!--FINALIZA Main-->
 
-  <footer>
+  <footer class="linear-grandient">
     <a href="../index.html" alt="Home" class="logo-footer">
       <img src="../img/logo.webp" class="imgLogo-footer" alt="logo AM">
     </a>
@@ -231,13 +232,15 @@
       <a href="https://www.instagram.com" target="_blank">
         <img src="../img/instagram.svg" class="footerIcon2" alt="Siguenos en instagram">
       </a>
+      <a href="https://www.https://twitter.com/" target="_blank">
+        <img src="../img/twitter.svg" class="footerIcon2" alt="Siguenos en twitter">
+      </a>
     </div>
   </footer>
 
 
   <!--Finaliza footer-->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="../fresco-2.3.2/dist/js/fresco.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>

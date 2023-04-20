@@ -1,35 +1,25 @@
-
-
-//ubicanos//
-h1 {
-    text-decoration: underline;
-    font-size: $text-lg;
-    color: $colorPrincipal;
-    text-align: center;
-    font-family: $font-tipo-Secundario;
-
-    h2 {
-        text-align: center;
-        font-size: $text-g;
-        margin: 1.5em;
-        color: $colorText;
+/*pag ubicanos*/
+    .title-1 {
+        @include textos(2em, white, Georgia, center);
     }
 
-    p {
-        color: $colorSecundario;
-        margin: $text-lg ;
-        font-size:$text-g;
+    .h-2 {
+        @include textos(1.5em, black, Georgia, center);
 
-        div {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 5em;
+    }
 
-            iframe {
-                width: 100%;
-            }
+    .text-3 {
+        color: map-get($map: $colores , $key: tres);
+        margin: 1em;
+        font-size: $text-g;
+    }
+
+
+    .ubicanos-mapa {
+        @include flex(row, center, center);
+        margin-bottom: 5em;
+
+        iframe {
+            width: 100%;
         }
     }
-}

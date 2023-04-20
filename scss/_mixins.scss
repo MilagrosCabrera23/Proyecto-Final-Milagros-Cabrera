@@ -1,0 +1,48 @@
+
+//mixins//
+@mixin textos($size, $color, $font-tipoPrimario, $align) {
+        font-size: $size; //variables locales//
+        color: $color; //variables locales//
+        font-family: $font-tipoPrimario; //varaible global//   
+        text-align: $align;
+
+        @if $align==center {
+                text-align: center;
+        }
+
+        @else if $align ==left {
+                text-align: left;
+        }
+
+        @else if $align ==right {
+                text-align: right;
+        }
+}
+
+@mixin flex($direction, $justify, $align) {
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify;
+        align-items: $align;
+}
+
+
+
+//maps
+$colores: (
+        'uno':black,
+        'dos': white,
+        'tres':crimson,
+        'cuatro':blueviolet,
+        'cinco':lightblue,
+        'seis':dodgerblue,
+        'siete': #FF00BF,
+        'ocho': #E6E6FA,
+        'nueve':coral,
+        'diez':gray,
+        'once':aqua,
+       
+)
+   
+
+

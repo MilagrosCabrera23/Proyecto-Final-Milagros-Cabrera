@@ -1,70 +1,53 @@
-h1 {
-    color: $colorPrincipal;
+.title-nosotros {
+    color: map-get($map: $colores , $key: dos);
     margin: 1em;
-    font-size: $text-g;
 
-    p {
-        font-size: $text-sm;
-        line-height: 1em;
-        font-family: $font-tercer;
-        color: $colorText;
+}
 
+.descripciones-nosotros {
+    margin: 1em;
+    font-size: $text-m;
+
+    &::first-letter {
+        color: map-get($map: $colores , $key: once);
         font-size: $text-g;
 
-        &:first-letter {
-            color: aqua;
 
-            h2 {
-                font-size: $text-g;
-                text-align: center;
-                color: $colorPrincipal;
+    }
 
-                section {
-                    display: flex;
-                    flex-direction: column;
+}
 
-                    article {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        margin-top: 1em;
 
-                        h3 {
-                            color: $colorPrincipal;
-                            text-align: left;
-                            margin: 1em 0em;
-                            text-decoration: underline;
-                            font-size: $text-g;
+.nosotros-box-2 {
+    display: flex;
+    flex-direction: column;
 
-                            p {
-                                text-align: center;
-                                color: $colorText;
-                                font-size: $text-sm;
-                                font-family: $font-tipoPrimario;
+    article {
+        @include flex(column, center, center);
+        margin-top: 1em;
+        width: 100%;
 
-                                img {
-                                    width: 60%;
+        .subtitulo-secundario {
+            margin: 1em 0em;
+            text-decoration: underline;
+            @include textos(1.5em, deeppink, 'Courier New', left);
+        }
 
-                                    div {
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
-                                        justify-content: center;
-
-                                        a {
-                                            background-color: darkturquoise;
-                                            color: $colorPrincipal;
-                                            padding: 1em;
-                                            margin-top: 1em;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            .descripciones-team {
+                margin: 1em;
+                @include textos(1.2em, gray, 'Roboto', center );
             }
         }
-    }
+            .img-nosotros {
+                width: 60%;
+                border: 8px solid white;
+            }
+        }
+
+
+    
+
+.boton-nosotros-serv {
+    @extend .button;
+    margin-top: 1.3em;
 }

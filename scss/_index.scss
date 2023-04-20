@@ -1,85 +1,124 @@
-
-h1{
-    
+// Introduccion de Index
+.linear-grandient2 {
+    background-color: map-get($map: $colores , $key: ocho);
 }
 
 .article-home {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 2em;
-    
-}
 
-.article-home h1 {
-    font-size: 1.3em;
-    text-align: center;
-    color: white;
-    margin-bottom: 1em;
-}
+    .h1-home {
+        font-size: $text-g;
+        text-align: center;
+        color: map-get($map: $colores , $key: dos);
+        overflow: none;
+        margin: 1.5em;
+    }
 
-.article-home p {
-    text-align: center;
-    
-}
+    .index-parrafos {
+        text-align: center;
+        font-size:$text-m
+    }
 
-.bg-azul{
-    font-size: 1.3em;
-    margin: 0.3em;
-    color: blue;
-   }
-.w-33{
-    width: 33%;
-    margin: 1em;
 }
-.home-h2 {
-    text-align: center;
-    margin-bottom: 1.5em;
-}
+    .sub-index {
+        text-align: center !important;
+        margin-bottom: 1.5em;
+        color:$colorPrincipal;
+    }
 
-.secciones{
+
+
+
+
+
+
+
+
+// Secciones de Index - Box 2
+
+.secciones {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 2px solid black
-    
-    
+
+    .nombres-seccion {
+        color: map-get($map: $colores , $key: tres);
+        text-decoration: underline;
+    }
+
+    .fotos-home {
+        width: 90%;
+        margin: 1em;
+
+    }
+
+    .letra-negra {
+        color: map-get($map: $colores , $key: diez);
+        font-size: $text-m;
+        text-align: center;
+        font-size: $text-m;
+        margin: 1em;
+    }
 }
 
-.secciones article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.secciones p {
+
+
+
+
+
+//animaciones botones
+.button {
+    background-color: $keyColor;
+    cursor: pointer;
+    border: none;
+    padding: 0.6em;
+    position: relative;
+    border-radius: 12px;
+    width: 50%;
     text-align: center;
-}
-.nombres-seccion{
-    color: crimson;
-}
-
-.fotos-home {
-    width: 99%
+    margin-left: 2em;
 
 }
-.home-boton-serv{
-    background-color: white;
-    color: red;
-    padding: 0.5em 0.5em;
-    margin: 2em;
-   }
-   .boton-index-serv{
-    margin-top: 1em;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+
+.button a {
+    color: $colorPrincipal;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+
+
 }
 
-.boton-index-serv a {
-    background-color: black;
-    padding: 1em;
-    color: white;
-    border: 5px solid white;
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            red, blue, deeppink, blue,
+            red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
