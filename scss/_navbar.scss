@@ -6,13 +6,13 @@
 
 
     img {
-        width: 40%;
+        width:$w-40 ;
     }
 }
 
 //animacion botonera
 .botonera ul li a {
-    color: map-get($map: $colores , $key: seis);
+    color: map-get($map: $colores , $key: dos);
     text-decoration: none;
     font-size: $text-g;
     font-family: $font-tipo-Secundario;
@@ -24,42 +24,40 @@
     transition: background-size .3s;
 
     &:hover {
-        color: $colorPrincipal;
-        background-size: 100% 0.5em;
+        color:$colorMain;
+        background-size: 50% 0.2em;
     }
 }
+
 
 
 
 footer {
     background-color: map-get($map: $colores , $key: siete);
-    @include flex(column, center, center);
+    @include flex(row, flex-end, center);
 
     .logo-footer {
         display: flex;
-        text-align: center;
-        justify-content: center;
+        align-items: center;
+        justify-content:flex-start;
 
         .imgLogo-footer {
-            width: 50%;
+            width: $w-50;
         }
-    }
-
-    .footer-H2 {
-        text-decoration: overline;
-        color: map-get($map: $colores , $key: ocho);
-        text-align: center;
     }
 }
 
 .footer-icon-conteiner {
-    width: 50%;
-    @include flex(row, center, center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $w-50;
+        a {
+            width:$w-50;
+                img {
+                    width: $w-70;
+                }
+        }
+ 
 }
-    .footer-icon-conteiner a {
-        width: 30%;
-    }
-
-    .footer-icon-conteiner img {
-        width: 40%;
-    }
+    

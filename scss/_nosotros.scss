@@ -1,53 +1,52 @@
-.title-nosotros {
-    color: map-get($map: $colores , $key: dos);
+.title-Nosotros {
     margin: 1em;
-
 }
 
-.descripciones-nosotros {
+.descripciones-Nosotros {
     margin: 1em;
     font-size: $text-m;
 
     &::first-letter {
         color: map-get($map: $colores , $key: once);
         font-size: $text-g;
-
-
+    
     }
 
 }
 
-
-.nosotros-box-2 {
+.nosotros-Box-2 {
     display: flex;
     flex-direction: column;
+    border-radius: 0.5em auto;
 
     article {
+        background-color:$colorPrincipal;
         @include flex(column, center, center);
-        margin-top: 1em;
-        width: 100%;
+        margin: 0.6em auto;
+        width:$w-90;
+        border-radius: 0.6em;
+    
 
-        .subtitulo-secundario {
-            margin: 1em 0em;
+        .subtitulo-Secundario {
+    
             text-decoration: underline;
-            @include textos(1.5em, deeppink, 'Courier New', left);
+            color:  map-get($map: $colores , $key: siete);
         }
 
-            .descripciones-team {
+            .descripciones-Team {
                 margin: 1em;
                 @include textos(1.2em, gray, 'Roboto', center );
             }
         }
-            .img-nosotros {
-                width: 60%;
-                border: 8px solid white;
+            .img-Nosotros {
+                width: $w-60;
+                margin: 0.6em auto;
             }
         }
 
+    //boton de nosotros animado
+    .boton-nosotros-serv{
+        @extend .button;
 
+    }
     
-
-.boton-nosotros-serv {
-    @extend .button;
-    margin-top: 1.3em;
-}

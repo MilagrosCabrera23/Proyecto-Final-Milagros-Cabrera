@@ -3,122 +3,85 @@
     background-color: map-get($map: $colores , $key: ocho);
 }
 
-.article-home {
+.article-Home {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width:$w-100;
 
-    .h1-home {
+    .h1-Home {
         font-size: $text-g;
         text-align: center;
-        color: map-get($map: $colores , $key: dos);
         overflow: none;
         margin: 1.5em;
     }
 
-    .index-parrafos {
+    .index-Parrafos {
         text-align: center;
-        font-size:$text-m
+        font-size: $text-m;
     }
-
 }
-    .sub-index {
-        text-align: center !important;
-        margin-bottom: 1.5em;
-        color:$colorPrincipal;
-    }
-
-
-
-
-
-
-
-
+.w-33{
+    background-color:$colorPrincipal ;
+    margin: 0.8em auto;
+    border-radius: 0.5em;   
+    width: $w-85;
+    
+}
+.sub-Index {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
 
 // Secciones de Index - Box 2
 
 .secciones {
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-    .nombres-seccion {
-        color: map-get($map: $colores , $key: tres);
-        text-decoration: underline;
-    }
-
-    .fotos-home {
-        width: 90%;
-        margin: 1em;
-
-    }
-
-    .letra-negra {
-        color: map-get($map: $colores , $key: diez);
-        font-size: $text-m;
-        text-align: center;
-        font-size: $text-m;
-        margin: 1em;
-    }
+    width:$w-100;
 }
 
+.nombres-Seccion {
+    color: map-get($map: $colores , $key: tres);
+    text-decoration: underline;
 
+}
 
+.fotos-Home {
+    width: 69%;
+    margin:  1em auto;
+}
 
-
-
-
-//animaciones botones
-.button {
-    background-color: $keyColor;
-    cursor: pointer;
-    border: none;
-    padding: 0.6em;
-    position: relative;
-    border-radius: 12px;
-    width: 50%;
+.letra-Negra {
+    color: map-get($map: $colores , $key: diez);
+    font-size: $text-m;
     text-align: center;
-    margin-left: 2em;
-
+    font-size: $text-m;
+    margin: 1em;
 }
 
-.button a {
-    color: $colorPrincipal;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
+//animaciones botones  animado
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: $w-100;
+    margin-bottom: 2em;
 
-
-}
-
-.button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,
-            red, blue, deeppink, blue,
-            red, blue, deeppink, blue);
-    background-size: 800%;
-    border-radius: 10px;
-    filter: blur(8px);
-    animation: glowing 20s linear infinite
-}
-
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:$keyColor ;
+        padding: 1em;
+        border-radius: 0, 5em;
+        width:$w-80;
     }
 
-    50% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
+    a {
+        color:$colorPrincipal ;
+        font-size: 1em;
+        font-weight: bold;
+        text-decoration: none;
     }
 }

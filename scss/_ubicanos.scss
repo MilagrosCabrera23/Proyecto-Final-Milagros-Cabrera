@@ -1,6 +1,7 @@
 /*pag ubicanos*/
     .title-1 {
-        @include textos(2em, white, Georgia, center);
+       text-align: center;
+       margin: 1em auto;
     }
 
     .h-2 {
@@ -15,11 +16,11 @@
     }
 
 
-    .ubicanos-mapa {
+    .ubicanos-Mapa {
         @include flex(row, center, center);
         margin-bottom: 5em;
 
         iframe {
-            width: 100%;
+            width: $w-100;
         }
     }

@@ -1,143 +1,174 @@
+// carousel bs
+.carousel-imagenes {
+    height: 25em;
+    object-fit: cover;
+}
+
+//media de
+@media (min-width:604px) {
+    .footer-icon-conteiner {
+        img {
+            width: $w-30 !important;
+        }
+    }
+}
+
 /* Breakpoints index */
-
-
 @media (min-width: 768px) {
 
     /* Media de index  */
 
-    .h1-home {
+    .h1-Home {
         font-size: $text-xxg ;
     }
 
-    .nombres-seccion {
-        text-align: center;
-        font-size: $text-lg !important;
-        text-decoration: overline;
+    .fotos-Home {
+        width: $w-50 !important;
+    }
 
+    .nombres-Seccion {
+        text-align: center;
+        font-size: $text-lg;
     }
 
     .secciones {
         @include flex(column, center, center);
-        margin: 0
+        margin: 0;
     }
 
-    .secciones .home-boton-serv {
-        @include flex(row, center, center);
+    .button {
+        div {
+            width:$w-50 !important;
+        }
     }
 
     /* Nosotros responsive */
 
-    .title-nosotros {
+    .title-Nosotros {
         font-size: $text-lg;
         text-align: center;
     }
 
-    .img-nosotros {
-        width: 30% !important;
+    .img-Nosotros {
+        width: $w-50!important;
     }
 
-    .descripciones-nosotros {
+    .descripciones-Nosotros {
         font-size: $text-g;
         text-align: center;
     }
 
-
-    .nosotros-box-2 {
+    .nosotros-Box-2 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
+        width: $w-100;
 
 
-        .nosotros-box-2 article {
-            width: 50%;
+        .nosotros-Box-2 article {
+            width: $w-50;
             @include flex(row, center, center);
             flex-wrap: nowrap;
+            width: $w-40 !important;
         }
     }
 
-    .button {
-        margin-left: 13em !important;
+    //servicios//
+
+    .title-ser {
+        font-size: $text-lg;
+    }
+
+    .serv-Descrip {
+        font-size: $text-lg;
+    }
+
+    .font-Letra {
+        font-size: $text-m;
+        text-align: center;
+        margin: 0.4em;
+    }
+
+    .bg-Violeta {
+        li {
+            font-size: $text-m;
+        }
+    }
+
+    .galeriaLetras {
+        font-size: $text-xxg;
+    }
+
+    /*ubicanos responsive*/
+
+    .title-1 {
+        font-size: $text-g;
+    }
+
+    .sub-2 {
+        font-size: $text-m;
+        color: map-get($map: $colores , $key: uno);
+        text-align: center;
+
+    }
+
+    .text-3 {
+        color: map-get($map: $colores , $key: tres);
+        font-size: $text-g;
+    }
+
+    iframe {
+        width: $w-100;
+    }
+
+    /*contacto responsive*/
+
+    .h1-Contacto {
+        font-size: $text-lg;
+    }
+
+    .lab-form {
+        width: $w-100;
+        font-size: $text-g;
+    }
+.input-form{
+    width: $w-60;
+}
+
+    .contacto-Form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:$w-100;
+    }
+
+    .boton-Enviar {
+        width: $w-30 !important;
+    }
+
+    //start footer
+
+    .logo-footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .footer-icon-conteiner {
+
+
+        img {
+            width: $w-25 !important;
+        }
     }
 }
-
-//servicios//
-.title-ser {
-    font-size: $text-lg;
-}
-
-.serv-descrip {
-    font-size: $text-g;
-}
-
-.font-letra {
-    font-size: $text-m;
-}
-
-.bg-violeta {
-    font-size: $text-m;
-}
-
-.galeriaLetras {
-    font-size: $text-xxg;
-}
-
-
-
-/*ubicanos responsive*/
-
-.title-1 {
-    font-size: $text-g;
-}
-
-.sub-2 {
-    font-size: $text-m;
-    color: map-get($map: $colores , $key: uno);
-    text-align: center;
-
-}
-
-.text-3 {
-    color: map-get($map: $colores , $key: tres);
-    font-size: $text-g;
-}
-
-iframe {
-    width: 100%;
-}
-
-/*contacto responsive*/
-
-.h1-contacto {
-
-    font-size: $text-g;
-}
-
-.buttonEnviar {
-    width: 50%;
-    border-radius: none;
-}
-
-.lab-form {
-    width: 100%;
-}
-
-.contacto-form textarea {
-    width: 100%;
-
-}
-
-.boton-enviar {
-    width: 20% !important;
-    margin-top: 1.3em;
-}
-
-
 
 
 
 
 @media (min-width: 1200px) {
+
+    // start index
 
     h1,
     h2 {
@@ -154,7 +185,7 @@ iframe {
 
     @keyframes typing {
         from {
-            width: 0
+            width: 0;
         }
     }
 
@@ -164,15 +195,13 @@ iframe {
         }
     }
 
-    .nombres-seccion {
+    .nombres-Seccion {
         text-align: left;
         text-decoration: underline;
-
     }
 
     .secciones {
-        display: flex;
-        flex-direction: row !important;
+
         margin: 1em 0em;
     }
 
@@ -181,7 +210,9 @@ iframe {
         margin: 0.5em;
     }
 
-
+    .fotos-Home {
+        width: 35% !important;
+    }
 
     .bg-negro {
         font-size: $text-m;
@@ -189,182 +220,179 @@ iframe {
         color: map-get($map: $colores , $key: uno);
     }
 
-    .w-33 {
-        width: 33%;
+
+
+    .button {
+        div {
+            width: 20% !important;
+        }
+
+    }
+
+    /* Nosotros responsive */
+    .title-Nosotros {
+        font-size: $text-lg;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .nombres-Seccion {
+        font-size: $text-xxg;
+    }
+
+    .descripciones-Nosotros {
+        font-size: $text-g;
+        line-height: $text-g;
+        text-align: center;
         margin: 1em;
     }
 
+    .nosotros-Box-2 {
+        display: flex;
+        width: $w-100;
+    }
+
+    .descripciones-Team {
+        font-size: $text-m;
+        font-family: $font-tipoPrimario;
+    }
+
+    .img-Nosotros {
+        width: 35% !important;
+    }
+
+
+
+    //servicios//
+    .title-ser {
+        font-size: $text-lg;
+    }
+
+    .serv-Descrip {
+        font-size: $text-g;
+    }
+
+    .font-Letra {
+        font-size: $text-m;
+    }
+
+    .bg-Violeta {
+        font-size: $text-g;
+    }
+
+    .galeriaLetras {
+        font-size: $text-xxg;
+    }
+
+    /*ubicanos responsive*/
+    .title-1 {
+        font-size: $text-xxxg;
+    }
+
+    .sub-2 {
+        text-align: center;
+        font-size: $text-g;
+        margin: 3em;
+    }
+
+    .text-3 {
+        font-size: $text-lg;
+    }
+
+    .ubicanos-Mapa iframe {
+        width: $w-100;
+    }
+
+    /*contacto responsive*/
+    .h1-Contacto {
+        font-size: $text-lg;
+    }
+
+    .lab-form {
+        width: $w-60;
+    }
+
+    .contacto-Form textarea {
+        width: $w-60;
+    }
+
+    .contacto-form {
+        @include flex(column, center, center);
+    }
+
+    .input-form {
+        width: $w-50;
+    }
+
+    .boton-Enviar {
+        width:$w-30 !important;
+    }
+
+    //error 404
+    .h2Error {
+        font-size: $text-xxg;
+        font-weight: bold;
+    }
+
+    .p-Error {
+        font-size: $text-g;
+    }
 }
 
-/* Nosotros responsive */
-
-.title-nosotros {
-    font-size: $text-lg;
-    text-align: center;
-    font-weight: bold;
-
-}
-
-.nombres-seccion {
-    font-size: $text-xxg;
-}
-
-.descripciones-nosotros {
-    font-size: $text-g;
-    line-height: $text-g;
-    text-align: center;
-    margin: 1em;
-}
-
-.nosotros-box-2 {
-    display: flex;
-    width: 100%;
-}
-
-.subtitulo-secundario {
-    font-size: 2em !important;
-}
-
-.descripciones-equip {
-    font-size: $text-m;
-    font-family: $font-tipoPrimario;
-}
-
-.nosotros-box-2 {
-    display: flex;
-    width: 100%;
-}
-
-//servicios//
-.title-ser {
-    font-size: $text-lg;
-}
-
-.serv-descrip {
-    font-size: $text-g;
-}
-
-.font-letra {
-    font-size: $text-m;
-}
-
-.bg-violeta {
-    font-size: $text-g;
-}
-
-.galeriaLetras {
-    font-size: $text-xxg;
-}
-
-
-
-/*ubicanos responsive*/
-.title-1 {
-    font-size: $text-xxxg;
-}
-
-.sub-2 {
-    text-align: center;
-    font-size: $text-g;
-    margin: 3em;
-
-}
-
-.text-3 {
-    font-size: $text-lg;
-}
-
-.ubicanos-mapa iframe {
-    width: 100%;
-}
-
-/*contacto responsive*/
-.h1-contacto {
-    font-size: $text-lg;
-}
-
-.lab-form {
-    width: 60%;
-}
-
-.buttonEnviar {
-    width: 20%;
-    border-radius: none;
-}
-
-
-.contacto-form textarea {
-    width: 60%;
-
-}
-
-.contacto-form {
-    @include flex(column, center, center);
-}
-
-.input-form {
-    width: 50%;
-}
-
+// EMPIEZA MEDIA DE 1500
 
 @media (min-width: 1500px) {
+    // start index
 
     .home-h2 {
         font-size: $text-xxg;
     }
 
-    .nombres-seccion {
+    .nombres-Seccion {
         font-size: $text-lg;
-
     }
 
     .w-100 {
-        width: 40%;
+        width: $w-40;
     }
 
-    .bg-negro {
+    .bg-Negro {
         color: map-get($map: $colores , $key: uno);
         font-size: $text-m;
         line-height: 1.5em;
         font-family: $font-tipoPrimario;
     }
 
-    .bg-negro:first-letter {
+    .bg-Negro:first-letter {
         color: map-get($map: $colores , $key: cuatro);
         font-size: $text-g;
         line-height: 1.6em;
     }
 
-.buttton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-}
 
     /* Nosotros responsive */
 
-    .title-nosotros {
+    .title-Nosotros {
         font-size: $text-xxg;
         text-align: center;
     }
 
-    .descripciones-nosotros {
+    .descripciones-Nosotros {
         font-size: $text-g;
         line-height: 1.6em;
         text-align: center;
         color: $colorText;
     }
 
-    .subtitulo-secundario {
+    .subtitulo-Secundario {
         font-size: 2.5em;
     }
 
-    .nosotros-box-2 article {
+    .nosotros-Box-2 article {
         width: 25%;
     }
 
-    .descripciones-equip {
+    .descripciones-Team {
         font-size: $text-m;
         font-family: $font-tipoPrimario;
     }
@@ -374,25 +402,23 @@ iframe {
     }
 
     .img-nosotros {
-        width: min-content;
+        width: $w-30!important;
     }
-
-
 
     //servicios///
     .title-ser {
         font-size: $text-xxg;
     }
 
-    .serv-descrip {
+    .serv-Descrip {
         font-size: $text-lg;
     }
 
-    .font-letra {
+    .font-Letra {
         font-size: $text-m;
     }
 
-    .bg-violeta {
+    .bg-Violeta {
         font-size: $text-g;
     }
 
@@ -401,12 +427,12 @@ iframe {
         font-family: $font-tercer;
     }
 
-
-    .ubicanos-serv_nosotros {
+//boton de ubicarnos
+    .ubicanos-serv_boton {
         width: 20%;
-
     }
 
+    
     /*ubicanos*/
     .title-1 {
         font-size: $text-xxxg;
@@ -419,18 +445,13 @@ iframe {
 
     /*contacto*/
 
-    .buttonEnviar {
-        padding: 1em;
-        width: 50%;
+    .contacto-Form textarea {
+        width: $w-50;
     }
 
-    .contacto-form textarea {
-        width: 50%;
+    //footer breakpoint
+    .logo-footer {
+        display: flex;
+        justify-content: left;
     }
-}
-
-//footer breakpoint{
-
-.footerIcon2 {
-    width: 25% !important;
 }

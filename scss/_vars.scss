@@ -1,16 +1,28 @@
 //variables globales//
 $body-bgColor: #E6E6FA;;
-$bg-Footer: #FF00BF;
-
+$bg-Footer: rgb(255, 0, 191);
 
 
 //colores de textos//
 $colorPrincipal:#fffffff8;
 $colorText:#000000;
-$colorSecundario:crimson;
-$keyColor:blueviolet;
+$colorSecundario:#FF033E;
+$keyColor:#6F00FF;
 $color-title:lightblue;
-$colorMain:dodgerblue;
+$colorMain:#00CCFF;
+
+
+//tamaño
+$w-25:25%;
+$w-30:30%;
+$w-40:40%;
+$w-50:50%;
+$w-60:60%;
+$w-70:70%;
+$w-80:80%;
+$w-85:85%;
+$w-90:90%;
+$w-100:100%;
 
 
 //fonts//
@@ -23,6 +35,7 @@ $text-sm:1em;
 $text-lg:2em;
 $text-xxg:2.2em;
 $text-xxxg:3em;
+$text-xbig:103em;
 $text-n:700;
 $text-light:300;
 

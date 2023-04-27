@@ -1,65 +1,35 @@
+.h1-Contacto {
+    margin: 0.5em;
+    @include textos(2em, black, 'Courier New', center);
+}
 
-    .h1-contacto {
-        margin: 0.5em;
-        @include textos(2em, black, 'Courier New', center);
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .contacto-Form {
+        @include flex(column, center, center);
     }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-        .contacto-form {
-            @include flex(column, center, center);
-        }
-
-        label {
-            color: map-get($map: $colores , $key: cuatro);
-            font-size:$text-m;
-        }
-
-        .contacto-form textarea {
-            width: 100%;
-
-        }
-
-    
-        }
-        .boton-enviar{
-            background-color: map-get($map: $colores , $key: nueve);
-            cursor: pointer;
-            border: none;
-            padding: 0.6em;
-            position: relative;
-            border-radius: 12px;
-            width: 100%;
-            text-align: center;
-         
-            color:$colorPrincipal;
-            font-size: 1em;
-            font-weight: bold;
-            text-decoration: none;
-        
-        
-        .boton-enviar::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-               45deg,
-               red,blue,deeppink,blue,
-               red,blue,deeppink,blue
-            );
-            background-size: 800%;
-            border-radius: 10px;
-            filter: blur(8px);
-            animation: glowing 20s linear infinite
+    label {
+        color: map-get($map: $colores , $key: doce);
+        font-size: $text-m;
        
-       }
     }
 
-    
+    .contacto-Form textarea {
+        width:$w-100;
+    }
+
+    //boton de enviar  animado
+    .boton-Enviar {
+       background-color: map-get($map: $colores , $key: trece);
+       color: $colorPrincipal;
+       font-size:$text-m;
+       font-weight: bold;
+       width:$w-80 ;
+       margin: 0.6em auto;
+       border: solid transparent;
+}
+}
