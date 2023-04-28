@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+  overflow-x: hidden;
+}
+
 .text-Degrade {
   color: #6F00FF;
   background-image: -webkit-linear-gradient(225deg, #6F00FF 40%, #ef56b9 71%);
